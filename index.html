@@ -15,6 +15,9 @@
             canvas: (function() {return document.getElementById('canvas');
             })()
         };
+        window.onload = function() {
+            window.dispatchEvent(new Event('resize'));
+        };
     </script>
     <script src="App.js"></script>
 </body>
