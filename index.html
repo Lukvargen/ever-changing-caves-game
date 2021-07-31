@@ -12,12 +12,14 @@
 
     <script type="text/javascript">
         var Module = {
-            canvas: (function() {return document.getElementById('canvas');
-            })()
+            canvas: function() {
+                return document.getElementById('canvas');
+            }
         };
-        window.onload = function() {
-            window.dispatchEvent(new Event('resize'));
-        };
+        window.onload = function () { window.focus(); }; window.onclick = function () { window.focus(); };
+        
+        
+
     </script>
     <script src="App.js"></script>
 </body>
